@@ -1,0 +1,13 @@
+@mixin subtitulo {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: $titulo;
+	padding-top: $pad-img;
+}
+
+@mixin linea {
+	height: 1px;
+	width: 100%;
+	margin-bottom: $important;
+	margin-top: $pad-img;
+}

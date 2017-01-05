@@ -1,0 +1,93 @@
+header {
+	img {
+		padding-top : $pad-img;
+		padding-bottom: 50px;
+	}
+}
+
+#menu {
+	ul {
+		padding-left: $important;
+		li{
+			display: inline-block;
+		}
+			a {
+				@include subtitulo;
+				padding-right: 30px;
+			}
+		}
+	}
+
+input {
+	padding: 5px 0;
+}
+
+#banner {	
+	img {
+		padding-top: $pad-img;
+		width: 100%;
+	}
+}
+
+section {
+	padding-top: $pad-img;
+	img {
+		padding-top: $pad-img;
+		width: 100%;
+	}
+}
+
+.texto {
+	padding-top: $pad-img;
+	font-weight: bold;
+	color: $titulo;
+}
+
+h4 {
+	@include subtitulo;
+}
+
+h5 {
+	font-weight: bold;
+	font-size: 17px;
+	line-height:1.4;
+
+}
+span {
+	color: $rojo;
+}
+
+p {
+	color: $titulo;
+	padding-top: 5px;
+}
+
+hr {
+	@include linea;
+	background-color: #E5E2E2;
+}
+
+.hr-red {
+	background-color: $rojo;
+}
+
+
+// css de las estrellas 
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  float: left;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+  color: black;
+
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   color: yellow;
+}
